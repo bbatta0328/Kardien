@@ -1,4 +1,5 @@
 import discord
+import os
 import asyncio
 from discord.ext import commands
 from discord.ext.commands import bot
@@ -13,4 +14,5 @@ async def on_ready():
 async def ip(ctx):
     await ctx.send('Kardien.kro.kr')
 
-bot.run('Njk0NDkxMDQ5OTMzOTMwNjA3.XoMcBg.-CE89bvk4O_eUhHTzkzjHkO2D9Y')
+access_token = os.environ["BOT_TOKEN"]    
+bot.run(access_token)
