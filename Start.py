@@ -1,18 +1,20 @@
 import discord
-import asyncio
 import os
 from discord.ext import commands
-from discord.ext.commands import bot
 
-bot = commands.Bot(command_prefix='!')
+client = commands.Bot(command_prefix='!')
 
-@bot.event
+@client.event
 async def on_ready():
-    print('Kardien Start')
-    
-@bot.command()
-async def ip(ctx):
-    await ctx.send('Kardien.kro.kr')    
+    print('KardienBot Online.')
 
-access_token = os.environ["BOT_TOKEN"]    
-bot.run(access_token)
+@client.command()
+async def ping(ctx):
+    await ctx.send(f'Pong! {round(client.latency * 1000)}ms')
+
+@client.command()
+async def ip(ctx):
+    await ctx.send('Kardien.Kro.Kr')
+
+access_token = os.environ("BOT_TOKEN")
+client.run(access_token)
