@@ -15,4 +15,8 @@ async def ping(ctx):
 async def ip(ctx):
     await ctx.send('Kardien.Kro.Kr')
 
+@client.command()
+async def youtube(ctx):
+    await ctx.send('https://www.youtube.com/channel/UCjC6MSETcO3VeR6Xop7cIqw')
+
 client.run('Njk0NDkxMDQ5OTMzOTMwNjA3.XoMx_Q.zO_9yruCQ8g5eTqYW7GsxRW6p1M')
