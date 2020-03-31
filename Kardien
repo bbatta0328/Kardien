@@ -1,12 +1,11 @@
 import discord
 from discord.ext import commands
-import os
 
 client = commands.Bot(command_prefix='!')
 
 @client.event
 async def on_ready():
-    print('KardienBot Online.')
+    print('Bot is ready.')
 
 @client.command()
 async def ping(ctx):
@@ -16,5 +15,4 @@ async def ping(ctx):
 async def ip(ctx):
     await ctx.send('Kardien.Kro.Kr')
 
-access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+client.run('Njk0NDkxMDQ5OTMzOTMwNjA3.XoMx_Q.zO_9yruCQ8g5eTqYW7GsxRW6p1M')
