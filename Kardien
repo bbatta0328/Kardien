@@ -30,5 +30,5 @@ async def on_message(message):
         await message.channel.send("**1000subs & 5 kardien videos**")
     if message.content.startswith("!unban"):
         await message.channel.send("**10000WON (Paypal 10$)**")
-        
-client.run("BOT_TOKEN")
+	
+client.run('Njk0NDkxMDQ5OTMzOTMwNjA3.XoM_LQ.scpQNTZA7IScsFZ4_ldztaRAQJQ')
