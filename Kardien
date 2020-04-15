@@ -2,33 +2,15 @@ import discord
 
 client = discord.Client()
 
+
 @client.event
 async def on_ready():
     print('Kardien Online')
 
+
 @client.event
 async def on_message(message):
-    if message.content.startswith("!ip"):
-        await message.channel.send("**Kardien.Kro.Kr**")
-    if message.content.startswith("!kardien"):
-        await message.channel.send("**Kardien.Kro.Kr**")
-    if message.content.startswith("!buy"):
-        await message.channel.send("**Krouda#1409**")
-    if message.content.startswith("!staff"):
-        await message.channel.send("#𝐒𝐭𝐚𝐟𝐟-𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧")
     if message.content.startswith("!hi"):
-        await message.channel.send("**Hi :)**")
-    if message.content.startswith("!silver"):
-        await message.channel.send("**2000WON**")
-    if message.content.startswith("!gold"):
-        await message.channel.send("**3000WON**")
-    if message.content.startswith("!diamond"):
-        await message.channel.send("**5000WON**")
-    if message.content.startswith("!youtuber"):
-        await message.channel.send("**300subs & 2 kardien videos**")
-    if message.content.startswith("!famous"):
-        await message.channel.send("**1000subs & 5 kardien videos**")
-    if message.content.startswith("!unban"):
-        await message.channel.send("**10000WON (Paypal 10$)**")
-	
-client.run('Njk0NDkxMDQ5OTMzOTMwNjA3.XoM_LQ.scpQNTZA7IScsFZ4_ldztaRAQJQ')
+        await message.channel.send("WELCOME TO **KARDIEN!** 
+            
+client.run('Njk0NDkxMDQ5OTMzOTMwNjA3.XoRgPQ.zTpNzI3Jzo0u68I5v5IZz5LJUtU')
